@@ -313,9 +313,7 @@ public final class PackageManager {
     }
 
     private func updatePackages() throws {
-        return
         printer.reportProgress("Updating packages...")
-
         do {
             let toolsVersion = try resolveSwiftToolsVersion()
             try generateMasterPackageDescription(forSwiftToolsVersion: toolsVersion)
